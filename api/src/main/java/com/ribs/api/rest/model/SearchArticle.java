@@ -5,10 +5,23 @@ public class SearchArticle {
     private String id;
     private String name;
 
+
+    @Override
+    public String toString() {
+        return "SearchArticle{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public SearchArticle() {
+    }
+
     public SearchArticle(String id, String name) {
         this.id = id;
         this.name = name;
     }
+
 
     public String getId() {
         return id;

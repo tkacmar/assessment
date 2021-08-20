@@ -10,6 +10,9 @@ public class Api {
 
     public static void main(String[] args) {
         System.out.println("Hello from API service");
+        KafkaConnectionHelper kafkaConnectionHelper = new KafkaConnectionHelper();
+        kafkaConnectionHelper.setKafkaConnectionHelper(kafkaConnectionHelper);
+//        kafkaConnectionHelper.consume();
         SpringApplication.run(Api.class, args);
 
 
