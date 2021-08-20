@@ -20,9 +20,7 @@ branch, created from main and push it back to Github.
 
 
 Building the App:
-
-[INFO] Finished at: 2021-08-20T14:27:35+02:00
-[INFO] ------------------------------------------------------------------------
+------------------------------------------------------
 
 assessment\api> mvn clean install -U
 
@@ -32,6 +30,8 @@ assessment\api> mvn clean install -U
 [INFO] Finished at: 2021-08-20T14:28:51+02:00
 [INFO] ------------------------------------------------------------------------
 
+Running the App:
+------------------------------------------------------
 
 assessment\api> mvn spring-boot:run
 
