@@ -13,7 +13,7 @@ public class KafkaConnectionHelper {
     private static final String KAFKA_PASSWORD = System.getProperty("kafka.password");
 
     public static Properties getKafkaProperties() {
-        if(KAFKA_USERNAME == null || KAFKA_PASSWORD == null) {
+        if (KAFKA_USERNAME == null || KAFKA_PASSWORD == null) {
             throw new IllegalArgumentException("Missing Kafka authentication properties. Please set 'kafka.username' and 'kafka.password' properties.");
         }
         String jaasCfg = String.format(JAAS_TEMPLATE, KAFKA_USERNAME, KAFKA_PASSWORD);
@@ -36,7 +36,7 @@ public class KafkaConnectionHelper {
         return props;
     }
 
-    public static String getKafkaTopic(){
+    public static String getKafkaTopic() {
         return String.format("%s-default", KAFKA_USERNAME);
     }
 }
