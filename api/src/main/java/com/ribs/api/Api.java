@@ -1,9 +1,8 @@
 package com.ribs.api;
 
+import com.ribs.api.rest.connection.DBConnect;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
 public class Api {
@@ -11,11 +10,9 @@ public class Api {
     public static void main(String[] args) {
         System.out.println("Hello from API service");
         KafkaConnectionHelper kafkaConnectionHelper = new KafkaConnectionHelper();
-        kafkaConnectionHelper.setKafkaConnectionHelper(kafkaConnectionHelper);
-//        kafkaConnectionHelper.consume();
+        KafkaConnectionHelper.setKafkaConnectionHelper(kafkaConnectionHelper);
+        kafkaConnectionHelper.consume();
+        DBConnect.makeJDBCConnection();
         SpringApplication.run(Api.class, args);
-
-
     }
-
 }

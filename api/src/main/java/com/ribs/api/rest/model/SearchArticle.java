@@ -5,15 +5,6 @@ public class SearchArticle {
     private String id;
     private String name;
 
-
-    @Override
-    public String toString() {
-        return "SearchArticle{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
     public SearchArticle() {
     }
 
@@ -38,4 +29,13 @@ public class SearchArticle {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "SearchArticle{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
 }

@@ -17,11 +17,13 @@ public class ArticlesDAO {
 
     public Article getArticle(SearchArticle toSearchArticle) {
 
-
-
-        return new Article(Integer.valueOf(1),"Java Spring","Deitel", new Date());
+        return new Article(Integer.valueOf(1), "Java Spring", "Deitel", new Date());
     }
 
 
+    public void getArticleById(SearchArticle toSearchArticle) {
+    }
 
+    public void getArticleByName(SearchArticle toSearchArticle) {
+    }
 }

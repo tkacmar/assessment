@@ -1,14 +1,10 @@
 package com.ribs.api.rest.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.Date;
-
-
 public class Comments {
     private Integer id;
     private Integer articleId;
     private String autor;
+    private String comment;
 
     public Integer getId() {
         return id;
@@ -41,6 +37,4 @@ public class Comments {
     public void setComment(String comment) {
         this.comment = comment;
     }
-
-    private String comment;
 }

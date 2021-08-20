@@ -1,5 +1,7 @@
 package com.ribs.api.rest.model;
+
 import java.util.Date;
+
 public class Article {
     private Integer id;
     private String title;
