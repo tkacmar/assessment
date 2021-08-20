@@ -1,6 +1,6 @@
 # Assessment
 
-###The Challenge:
+### The Challenge:
 
 In project Assessment are prepared 2 empty services (modules): `API` and `Logger`. Implement these services in the following way:
 API service is responsible for communication via REST API with GUI frontend. It should contain 2 REST endpoints. 
